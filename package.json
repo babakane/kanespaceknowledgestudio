@@ -1,10 +1,12 @@
 {
   "name": "kanespace-knowledge-studio",
+  "homepage": "https://babakane.github.io/kanespaceknowledgestudio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "preview": "vite preview",
     "test:setup": "ts-node setup-utils.ts",
@@ -14,22 +16,27 @@
     "setup:env": "bash scripts/setup-env.sh"
   },
   "dependencies": {
-    "lucide-react": "^0.563.0",
-    "react": "^19.2.4",
     "@google/genai": "^1.38.0",
-    "react-dom": "^19.2.4",
+    "@huggingface/hub": "^0.15.1",
     "axios": "^1.6.2",
     "dotenv": "^16.3.1",
-    "transformers": "^3.0.0",
-    "@huggingface/hub": "^0.15.1",
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "tar": "^6.2.0",
+    "transformers": "^3.0.0",
     "unzipper": "^0.10.14"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.4.23",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "ts-node": "^10.9.1",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0",
-    "ts-node": "^10.9.1"
+    "vite": "^6.2.0"
   }
 }

@@ -3,6 +3,7 @@
 ## ✅ Automated Deployment Pipeline
 
 ### GitHub Actions CI/CD
+
 - [x] Build workflow created (`.github/workflows/deploy.yml`)
 - [x] Automatic testing on push to main
 - [x] Automatic deployment to Cloudflare Pages
@@ -38,6 +39,7 @@ Add these to: https://github.com/babakane/KaneSpace-Knowledge-Base-Studio/settin
    - Create a new access token
 
 ### Add to GitHub:
+
 ```bash
 # Or manually add via GitHub UI
 # Go to: Settings → Secrets and variables → Actions → New repository secret
@@ -48,20 +50,23 @@ Add these to: https://github.com/babakane/KaneSpace-Knowledge-Base-Studio/settin
 ## 🌐 Google Site Integration
 
 ### Quick Setup
+
 1. Copy embed code from [GOOGLE_SITE_INTEGRATION.md](GOOGLE_SITE_INTEGRATION.md)
 2. Go to your Google Site
 3. Insert → Embed
 4. Paste the iframe code
 
 ### Embed Code:
+
 ```html
-<iframe 
-  src="https://kanespace-knowledge-studio.pages.dev" 
-  width="100%" 
-  height="800" 
-  frameborder="0" 
+<iframe
+  src="https://kanespace-knowledge-studio.pages.dev"
+  width="100%"
+  height="800"
+  frameborder="0"
   allow="microphone; speaker; camera"
-  style="border: none; border-radius: 8px;">
+  style="border: none; border-radius: 8px;"
+>
 </iframe>
 ```
 
@@ -70,12 +75,14 @@ Add these to: https://github.com/babakane/KaneSpace-Knowledge-Base-Studio/settin
 ## 🔍 Pre-Deployment Checks
 
 ### Automated in GitHub Actions:
+
 - [x] Dependency installation
 - [x] TypeScript compilation
 - [x] Build verification
 - [x] Output folder validation
 
 ### Manual Checks (Optional):
+
 ```bash
 # Test locally before pushing
 npm run build
@@ -90,7 +97,9 @@ npm run lint  # (if configured)
 ## 🚀 Deployment Workflow
 
 ### Current Automatic Process:
+
 1. **Push to GitHub**
+
    ```bash
    git add .
    git commit -m "Your message"
@@ -115,11 +124,13 @@ npm run lint  # (if configured)
 ## 📊 Monitoring & Analytics
 
 ### GitHub Actions
+
 - View build logs: Actions tab in your repo
 - Check for errors/warnings
 - See deployment history
 
 ### Cloudflare Pages
+
 - Dashboard: https://dash.cloudflare.com/pages
 - Analytics → Traffic/Performance
 - Edge Functions logs (if used)
@@ -129,6 +140,7 @@ npm run lint  # (if configured)
 ## 🔄 Making Updates
 
 ### To update your app:
+
 ```bash
 # Make changes locally
 # Then:
@@ -140,6 +152,7 @@ git push origin main
 ```
 
 ### The pipeline handles:
+
 - ✅ Building React app
 - ✅ Optimizing assets
 - ✅ Deploying to CDN
@@ -150,6 +163,7 @@ git push origin main
 ## ⚡ Performance Features
 
 ### Already Configured:
+
 - **Cache-Control headers** (netlify.toml/wrangler.toml)
 - **Security headers** (X-Frame-Options, CSP)
 - **Global CDN** (Cloudflare Pages)
@@ -161,16 +175,19 @@ git push origin main
 ## 🛠️ Troubleshooting
 
 ### Build Fails?
+
 1. Check GitHub Actions logs: https://github.com/babakane/KaneSpace-Knowledge-Base-Studio/actions
 2. Verify environment variables are set
 3. Run locally: `npm run build`
 
 ### App Not Loading?
+
 1. Check Cloudflare status: https://dash.cloudflare.com
 2. Clear cache: Ctrl+Shift+Delete
 3. Check URL: https://kanespace-knowledge-studio.pages.dev
 
 ### API Not Working?
+
 1. Verify secrets are set in GitHub
 2. Check API keys are valid
 3. Review browser console (F12)
@@ -189,6 +206,7 @@ git push origin main
 ## ✨ Summary
 
 You now have:
+
 - ✅ Automated CI/CD pipeline (GitHub Actions)
 - ✅ Automated deployments (Cloudflare Pages)
 - ✅ Environment variables setup guide

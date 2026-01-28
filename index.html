@@ -1,54 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kanespace Knowledge Studio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      background-color: #050505;
-      color: #ffffff;
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      overflow-x: hidden;
-    }
-    .font-orbitron { font-family: 'Orbitron', sans-serif; }
-    
-    /* Studio Background Animation */
-    @keyframes gradientBG {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .studio-bg {
-      background: linear-gradient(-45deg, #0f172a, #1e1b4b, #312e81, #1e1b4b);
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
-    }
-    
-    /* Scanlines effect for TV feel */
-    .scanlines {
-      position: relative;
-      overflow: hidden;
-    }
-    .scanlines:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
-                  linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-      background-size: 100% 2px, 3px 100%;
-      pointer-events: none;
-      z-index: 50;
-    }
-  </style>
-<script type="importmap">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+
+  <script type="importmap">
 {
   "imports": {
     "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
@@ -59,10 +19,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+
 </head>
+
 <body>
   <div id="root"></div>
-<script type="module" src="/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>

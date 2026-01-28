@@ -11,12 +11,14 @@ Your Kanespace Knowledge Studio project is **fully automated**. Here's what has 
 **File:** `.github/workflows/deploy.yml`
 
 **What it does:**
+
 - Automatically builds your app on every push to GitHub
 - Validates code and dependencies
 - Runs pre-deployment checks
 - Deploys to Cloudflare automatically
 
 **How it works:**
+
 ```
 You push code to GitHub
         ↓
@@ -34,6 +36,7 @@ Deploy to Cloudflare (if successful)
 **Configuration:** `wrangler.toml`
 
 **What it does:**
+
 - Receives builds from GitHub Actions
 - Deploys globally across Cloudflare's CDN
 - Provides automatic HTTPS
@@ -57,6 +60,7 @@ Add 4 GitHub Secrets: https://github.com/babakane/KaneSpace-Knowledge-Base-Studi
 4. `VITE_HF_API_KEY` - Your HuggingFace API Key
 
 **How it works:**
+
 - Secrets are stored securely in GitHub
 - Only available during automated builds
 - Never exposed in code or logs
@@ -67,24 +71,28 @@ Add 4 GitHub Secrets: https://github.com/babakane/KaneSpace-Knowledge-Base-Studi
 ## 🌐 4. Google Site Integration ✅
 
 **Files:**
+
 - `GOOGLE_SITE_INTEGRATION.md` - Complete integration guide
 - Ready-to-use embed code provided
 
 **How to integrate:**
+
 1. Go to your Google Site
 2. Click Insert → Embed
 3. Paste the provided iframe code
 4. Your app appears in your Google Site
 
 **Ready-to-use embed code:**
+
 ```html
-<iframe 
-  src="https://kanespace-knowledge-studio.pages.dev" 
-  width="100%" 
-  height="800" 
-  frameborder="0" 
+<iframe
+  src="https://kanespace-knowledge-studio.pages.dev"
+  width="100%"
+  height="800"
+  frameborder="0"
   allow="microphone; speaker; camera"
-  style="border: none; border-radius: 8px;">
+  style="border: none; border-radius: 8px;"
+>
 </iframe>
 ```
 
@@ -93,6 +101,7 @@ Add 4 GitHub Secrets: https://github.com/babakane/KaneSpace-Knowledge-Base-Studi
 ## ✔️ 5. Pre-Deployment Checks ✅
 
 **Automated validation includes:**
+
 - Dependency installation verification
 - Build success validation
 - Output directory verification
@@ -105,14 +114,14 @@ Add 4 GitHub Secrets: https://github.com/babakane/KaneSpace-Knowledge-Base-Studi
 
 ## 📚 Documentation Created
 
-| File | Purpose |
-|---|---|
-| `AUTOMATION_SETUP.md` | Complete automation setup guide |
-| `AUTOMATION_SUMMARY.md` | Visual overview of the architecture |
-| `DEPLOYMENT_AUTOMATION.md` | Detailed deployment checklist |
+| File                         | Purpose                               |
+| ---------------------------- | ------------------------------------- |
+| `AUTOMATION_SETUP.md`        | Complete automation setup guide       |
+| `AUTOMATION_SUMMARY.md`      | Visual overview of the architecture   |
+| `DEPLOYMENT_AUTOMATION.md`   | Detailed deployment checklist         |
 | `GOOGLE_SITE_INTEGRATION.md` | Multiple ways to embed in Google Site |
-| `NEXT_STEPS.md` | Action items and quick reference |
-| `NEXT_STEPS.md` | Your immediate next steps |
+| `NEXT_STEPS.md`              | Action items and quick reference      |
+| `NEXT_STEPS.md`              | Your immediate next steps             |
 
 ---
 
@@ -142,6 +151,7 @@ Add 4 GitHub Secrets: https://github.com/babakane/KaneSpace-Knowledge-Base-Studi
    - New token
 
 **How to add:**
+
 1. Click "New repository secret"
 2. Enter secret name
 3. Paste value
@@ -207,14 +217,17 @@ git push origin main
 ## 📈 Monitor Your Deployments
 
 **GitHub Actions:**
+
 - https://github.com/babakane/KaneSpace-Knowledge-Base-Studio/actions
 - See build logs, errors, and deployment status
 
 **Cloudflare Pages:**
+
 - https://dash.cloudflare.com/pages
 - See live deployments, analytics, and logs
 
 **Your Live App:**
+
 - https://kanespace-knowledge-studio.pages.dev
 - Test the app directly
 
@@ -223,6 +236,7 @@ git push origin main
 ## 🎓 Key Features
 
 ### Automatic on Every Push:
+
 - ✅ Dependency installation
 - ✅ React build
 - ✅ Code validation
@@ -231,6 +245,7 @@ git push origin main
 - ✅ Global CDN distribution
 
 ### Security:
+
 - ✅ Secure API key storage (GitHub Secrets)
 - ✅ Automatic HTTPS
 - ✅ Security headers
@@ -238,12 +253,14 @@ git push origin main
 - ✅ Cache validation
 
 ### Performance:
+
 - ✅ Global CDN
 - ✅ Automatic caching
 - ✅ Zero-downtime deployments
 - ✅ Instant failover
 
 ### Monitoring:
+
 - ✅ Build logs
 - ✅ Deployment status
 - ✅ Error tracking
@@ -253,13 +270,13 @@ git push origin main
 
 ## 🔧 Troubleshooting Quick Links
 
-| Problem | Solution |
-|---|---|
-| Build failed | Check GitHub Actions logs → check for missing secrets |
-| App not loading | Verify URL: https://kanespace-knowledge-studio.pages.dev |
-| API not working | Verify GitHub Secrets are set with correct values |
-| Google Site embed not showing | Check iframe code syntax & URL |
-| Deployment slow | Check Cloudflare Pages status page |
+| Problem                       | Solution                                                 |
+| ----------------------------- | -------------------------------------------------------- |
+| Build failed                  | Check GitHub Actions logs → check for missing secrets    |
+| App not loading               | Verify URL: https://kanespace-knowledge-studio.pages.dev |
+| API not working               | Verify GitHub Secrets are set with correct values        |
+| Google Site embed not showing | Check iframe code syntax & URL                           |
+| Deployment slow               | Check Cloudflare Pages status page                       |
 
 ---
 
@@ -305,6 +322,7 @@ You have successfully automated:
 ## 🚀 Ready to Deploy!
 
 **All you need to do:**
+
 1. Add GitHub Secrets (5 minutes)
 2. Make a change & push to GitHub
 3. Watch it deploy automatically!
@@ -312,6 +330,7 @@ You have successfully automated:
 **Your app will be live at:** https://kanespace-knowledge-studio.pages.dev
 
 **Questions?** Check the detailed guides in your repository:
+
 - `AUTOMATION_SETUP.md`
 - `NEXT_STEPS.md`
 - `DEPLOYMENT_AUTOMATION.md`

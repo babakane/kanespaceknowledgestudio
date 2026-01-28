@@ -13,6 +13,7 @@ import {
   ExternalLink,
   Activity,
 } from "lucide-react";
+import logo from './src/assets/logo.png';
 
 const App: React.FC = () => {
   const [state, setState] = useState<AppState>({
@@ -139,8 +140,11 @@ const App: React.FC = () => {
       {/* Kanespace Branding Navigation */}
       <header className="px-6 py-5 flex justify-between items-center z-50 bg-black/50 backdrop-blur-xl border-b border-white/5">
         <div className="flex items-center gap-4">
+          import logo from './assets/logo.png'; // Added import
+
+          // ... inside the component
           <img
-            src="/logo.png"
+            src={logo}
             alt="Kanespace Logo"
             className="w-12 h-12 rounded-sm object-contain"
           />

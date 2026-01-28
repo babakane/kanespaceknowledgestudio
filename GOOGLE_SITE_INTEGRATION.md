@@ -1,6 +1,7 @@
 # Google Site Integration Guide
 
 ## Overview
+
 This guide explains how to embed your Kanespace Knowledge Studio app into your Google Site.
 
 ---
@@ -8,26 +9,30 @@ This guide explains how to embed your Kanespace Knowledge Studio app into your G
 ## Option 1: Embed using Google Sites Embed Element (Recommended)
 
 ### Step 1: Get Your App URL
+
 Your Cloudflare Pages URL: `https://kanespace-knowledge-studio.pages.dev`
 
 ### Step 2: Add to Google Site
+
 1. Open your Google Site (https://sites.google.com)
 2. Edit the page where you want to embed the app
 3. Click **Insert** → **Embed** (or search for "Embed")
 4. Paste this code:
 
 ```html
-<iframe 
-  src="https://kanespace-knowledge-studio.pages.dev" 
-  width="100%" 
-  height="800" 
-  frameborder="0" 
+<iframe
+  src="https://kanespace-knowledge-studio.pages.dev"
+  width="100%"
+  height="800"
+  frameborder="0"
   allow="microphone; speaker; camera"
-  style="border: none; border-radius: 8px;">
+  style="border: none; border-radius: 8px;"
+>
 </iframe>
 ```
 
 ### Step 3: Customize (Optional)
+
 - Adjust `height="800"` to your preferred height (in pixels)
 - Change `width="100%"` for custom width
 - Add `allowfullscreen` if you want full-screen capability
@@ -49,23 +54,27 @@ If embedding doesn't work, create a link:
 Create separate pages for different features:
 
 **Main Tab:**
+
 ```html
-<iframe 
-  src="https://kanespace-knowledge-studio.pages.dev" 
-  width="100%" 
-  height="1000" 
-  frameborder="0" 
-  allow="microphone; speaker; camera">
+<iframe
+  src="https://kanespace-knowledge-studio.pages.dev"
+  width="100%"
+  height="1000"
+  frameborder="0"
+  allow="microphone; speaker; camera"
+>
 </iframe>
 ```
 
 **Documentation Tab:**
+
 ```html
-<iframe 
-  src="https://your-documentation-url.com" 
-  width="100%" 
-  height="800" 
-  frameborder="0">
+<iframe
+  src="https://your-documentation-url.com"
+  width="100%"
+  height="800"
+  frameborder="0"
+>
 </iframe>
 ```
 
@@ -74,16 +83,19 @@ Create separate pages for different features:
 ## Troubleshooting
 
 ### App Not Loading?
+
 - Check URL is correct: `https://kanespace-knowledge-studio.pages.dev`
 - Ensure Cloudflare deployment is complete
 - Clear browser cache (Ctrl+Shift+Delete)
 
 ### Audio/Microphone Not Working?
+
 - Add this to iframe: `allow="microphone; speaker; camera"`
 - Ensure browser permissions are granted
 - Check browser console for errors (F12)
 
 ### Sizing Issues?
+
 - Adjust `height` value (try 800-1200 pixels)
 - Use `height="100vh"` for full viewport height
 
@@ -98,12 +110,13 @@ Once you add a custom domain to Cloudflare Pages:
 3. Update iframe URL to your custom domain:
 
 ```html
-<iframe 
-  src="https://your-custom-domain.com" 
-  width="100%" 
-  height="800" 
-  frameborder="0" 
-  allow="microphone; speaker; camera">
+<iframe
+  src="https://your-custom-domain.com"
+  width="100%"
+  height="800"
+  frameborder="0"
+  allow="microphone; speaker; camera"
+>
 </iframe>
 ```
 
@@ -114,11 +127,14 @@ Once you add a custom domain to Cloudflare Pages:
 For mobile-responsive embedding:
 
 ```html
-<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe 
-    src="https://kanespace-knowledge-studio.pages.dev" 
+<div
+  style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;"
+>
+  <iframe
+    src="https://kanespace-knowledge-studio.pages.dev"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-    allow="microphone; speaker; camera">
+    allow="microphone; speaker; camera"
+  >
   </iframe>
 </div>
 ```
