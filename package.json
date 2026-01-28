@@ -9,7 +9,9 @@
     "preview": "vite preview",
     "test:setup": "ts-node setup-utils.ts",
     "test:cloud": "ts-node -e \"import('./services/cloudStorageManager').then(m => console.log('Cloud storage module loaded successfully'))\"",
-    "test:hybrid": "ts-node -e \"import('./services/hybridModelService').then(m => console.log('Hybrid model service loaded successfully'))\""
+    "test:hybrid": "ts-node -e \"import('./services/hybridModelService').then(m => console.log('Hybrid model service loaded successfully'))\"",
+    "setup:dev": "node scripts/setup-dev.js",
+    "setup:env": "bash scripts/setup-env.sh"
   },
   "dependencies": {
     "lucide-react": "^0.563.0",
