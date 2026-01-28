@@ -1,0 +1,33 @@
+{
+  "name": "kanespace-knowledge-studio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:setup": "ts-node setup-utils.ts",
+    "test:cloud": "ts-node -e \"import('./services/cloudStorageManager').then(m => console.log('Cloud storage module loaded successfully'))\"",
+    "test:hybrid": "ts-node -e \"import('./services/hybridModelService').then(m => console.log('Hybrid model service loaded successfully'))\""
+  },
+  "dependencies": {
+    "lucide-react": "^0.563.0",
+    "react": "^19.2.4",
+    "@google/genai": "^1.38.0",
+    "react-dom": "^19.2.4",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "transformers": "^3.0.0",
+    "@huggingface/hub": "^0.15.1",
+    "tar": "^6.2.0",
+    "unzipper": "^0.10.14"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "ts-node": "^10.9.1"
+  }
+}

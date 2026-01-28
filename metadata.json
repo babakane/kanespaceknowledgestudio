@@ -1,0 +1,7 @@
+{
+  "name": "Kanespace Knowledge Studio",
+  "description": "An interactive TV-style dialogue platform where AI-simulated humans discuss research topics and synthesize knowledge for human benefit.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

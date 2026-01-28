@@ -1,0 +1,8 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- This is a placeholder for your logo image -->
+  <!-- The actual image from your attachment should be placed here -->
+  <circle cx="256" cy="256" r="250" fill="none" stroke="#000" stroke-width="2"/>
+  <text x="256" y="270" font-size="24" text-anchor="middle" font-family="Arial" font-weight="bold">
+    PROJECT SERVICES
+  </text>
+</svg>
